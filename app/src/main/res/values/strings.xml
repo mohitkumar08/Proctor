@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Proctor</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="logged_userName"></string>
+    <string name="logged_userPassword"></string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="email_regex">^[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@"+ "[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$</string>
+    <string name="post_url">http://192.168.1.9/qm/index.php/api/</string>
+    <string name="login_url">http://54.64.5.133/proctr/index.php/api/Login</string>
+    <string name="title_activity_audit">AuditActivity</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="title_activity_question_home">Proctor</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_example">Example action</string>
+    <string name="title_activity_question">QuestionActivity</string>
+    <string name="title_activity_audit_finish">AuditFinish</string>
+    <string name="title_activity_audit_summary">AuditSummary</string>
+    <string name="title_activity_camera">CameraActivity</string>
+    <string name="title_activity_help_shift_integration">HelpShiftIntegration</string>
+    <string name="title_activity_lol">Lol</string>
+
+</resources>

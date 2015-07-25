@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="database_version">1</integer>
+    <string name="database_name">PROCTOR.db</string>
+    <string-array name="create_app_tables">
+        <item>@string/create_user</item>
+        <item>@string/create_location</item>
+        <item>@string/create_question</item>
+        <item>@string/create_audit</item>
+        <item>@string/create_audit_result</item>
+        <item>@string/create_audit_dashboard</item>
+    </string-array>
+
+    <string name="create_user">
+            CREATE TABLE IF NOT EXISTS User (
+        	ID INTEGER PRIMARY KEY AUTOINCREMENT,
+            USERNAME TEXT,
+        	PASSWORD TEXT
+          )
+    </string>
+     <string name="create_question">
+            CREATE TABLE IF NOT EXISTS Question (
+        	ID INTEGER PRIMARY KEY AUTOINCREMENT,
+        	AUDITTYPE TEXT,
+            CATEGORYNAME TEXT,
+        	QUESTIONTEXT TEXT,
+        	PHOTO TEXT,
+        	SCORE INT,
+        	QUESTIONSEQUENCE INT
+
+        	)
+
+
+    </string>
+    <string name="create_location">
+         CREATE TABLE IF NOT EXISTS Location (
+        	ID INTEGER PRIMARY KEY AUTOINCREMENT,
+            NAME TEXT,
+            AUDIT TEXT,
+            SCORE INT,
+            BY TEXT,
+            DATE TEXT
+            <!--AUDITID INT,
+            FOREIGN KEY(AUDITID) REFERENCES Audit(ID)
+            -->
+           )
+    </string>
+<string name="create_audit">
+         CREATE TABLE IF NOT EXISTS Audit (
+        	ID INTEGER PRIMARY KEY AUTOINCREMENT,
+            NAME TEXT
+
+
+           )
+    </string>
+    <string name="create_audit_result">
+        CREATE TABLE IF NOT EXISTS Inspection(
+        	ID INTEGER PRIMARY KEY AUTOINCREMENT,
+            CATEGORY TEXT,
+            QUESTIONNAME TEXT,
+            PHOTOPATH TEXT,
+            ISPHOTO TEXT,
+            SCORE INT,
+            ATTEMPT INT,
+            DASHBOARDID INT,
+            ISCHECKED INT
+
+        )
+
+    </string>
+    <string name="create_audit_dashboard">
+      CREATE TABLE IF NOT EXISTS Dashboard(
+        ID INTEGER PRIMARY KEY AUTOINCREMENT,
+        USERNAME TEXT,
+        CREATEDATE TEXT,
+        MODIFIEDATE TEXT,
+        TYPE TEXT,
+        STATUS INT,
+        LOCATIONAME TEXT,
+        TOTALSCORE INT
+        )
+</string>
+
+</resources>

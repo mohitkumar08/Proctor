@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.proctor" >
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <application
+        android:name="com.orm.SugarApp"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/MyTheme" >
+        <meta-data
+            android:name="DATABASE"
+            android:value="PROCTOR.db" />
+        <meta-data
+            android:name="VERSION"
+            android:value="1" />
+        <meta-data
+            android:name="QUERY_LOG"
+            android:value="true" />
+        <meta-data
+            android:name="com.proctor"
+            android:value="model" />
+
+        <activity
+            android:name=".App.Activity.SplashActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".App.Activity.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".App.Activity.AuditActivity"
+            android:label="@string/title_activity_audit"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".App.Activity.QuestionActivity"
+            android:label="@string/title_activity_question"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".App.Activity.AuditFinish"
+            android:label="@string/title_activity_audit_finish"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".App.Activity.AuditSummary"
+            android:label="@string/title_activity_audit_summary" >
+        </activity>
+        <activity
+            android:name=".App.Activity.CameraActivity"
+            android:label="@string/title_activity_camera"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".App.Activity.HelpShiftIntegration"
+            android:label="@string/title_activity_help_shift_integration" >
+        </activity>
+
+    </application>
+
+</manifest>

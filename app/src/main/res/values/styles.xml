@@ -1,0 +1,14 @@
+<resources>
+
+    <style name="MyTheme" parent="Theme.AppCompat.Light.DarkActionBar" >
+
+      <item name="android:actionOverflowButtonStyle">@style/OverFlow</item>
+     </style>
+
+    <!-- Styles -->
+<style name="OverFlow" parent="@android:style/Widget.Holo.ActionButton.Overflow">
+<item name="android:src">@drawable/abc_btn_rating_star_off_mtrl_alpha</item>
+</style>
+
+
+</resources>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="40dp">
+
+    <RelativeLayout
+        android:tag="reveal-right"
+        android:background="#99b4ff"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:tint="@color/icons"
+            android:src="@drawable/ic_action_read"/>
+    </RelativeLayout>
+
+    <!-- this view reveals when swipe left -->
+    <RelativeLayout
+        android:tag="reveal-left"
+        android:background="@color/primary"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:tint="@color/icons"
+            android:src="@drawable/ic_action_remove"/>
+    </RelativeLayout>
+
+
+    <!-- this is the item front view -->
+    <RelativeLayout
+        android:tag="front"
+        android:background="#94cd4b"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:gravity="fill_horizontal"
+  >
+
+        <TextView
+            android:id="@+id/summary_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:layout_marginLeft="5dp"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:textSize="16sp"
+
+           />
+
+        <TextView
+            android:id="@+id/summary_location"
+            android:layout_marginLeft="10dp"
+            android:text="hello"
+            android:textColor="#000000"
+            android:layout_centerHorizontal="true"
+            android:layout_alignBaseline="@+id/summary_username"
+             android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+
+    <!-- just a divider -->
+    <View android:background="@color/divider"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp" />
+
+
+
+</FrameLayout>
