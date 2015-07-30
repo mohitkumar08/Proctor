@@ -36,6 +36,11 @@
             android:layout_gravity="end"
             android:onClick="syncOperation"
             android:id="@+id/syncButton" />
+        <View
+            android:layout_width="2dp"
+            android:layout_gravity="end"
+            android:background="#fff4f9"
+            android:layout_height="60dp"/>
         <ImageView
             android:minWidth="80dp"
             android:minHeight="60dp"
@@ -162,6 +167,7 @@
 
 
         <RelativeLayout
+        android:layout_marginLeft="10dp"
 
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
@@ -171,7 +177,7 @@
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="#FFFFFF"
+                android:textColor="#000000"
                 android:layout_centerHorizontal="true"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="10dp"
@@ -240,6 +246,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/image_btn_1"
+
                 android:src="@drawable/camera_front"
                 android:layout_alignTop="@+id/comment_1"
                 android:layout_toRightOf="@+id/sumaary1"
@@ -248,6 +255,7 @@
 
 
             <ImageView
+                android:layout_marginRight="5dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/image_btn_2"
@@ -258,10 +266,10 @@
 
 
             <Button
-
+                android:layout_centerHorizontal="true"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Submit"
+                android:text="Mark As Complete"
                 android:id="@+id/button_submit"
                 android:layout_below="@+id/comment_3"
                 android:textColor="#FFFFFF"

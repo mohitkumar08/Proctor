@@ -16,6 +16,7 @@
         android:layout_alignParentTop="true"
         android:background="#4775a3">
 
+
         <ImageView
             android:layout_toRightOf="@+id/category_show_button"
             android:layout_toEndOf="@+id/category_show_button"
@@ -32,6 +33,12 @@
             android:layout_gravity="end"
             android:onClick="finishAudit"
             android:id="@+id/syncButton" />
+       <View
+           android:layout_width="2dp"
+           android:layout_gravity="end"
+           android:background="#fff4f9"
+           android:layout_height="60dp"/>
+
 
         <ImageView
             android:minWidth="70dp"
@@ -45,7 +52,12 @@
             android:layout_gravity="right"
             android:gravity="center"
             android:id="@+id/category_show_button" />
+
+
     </android.support.v7.widget.Toolbar>
+
+
+
     <LinearLayout
         android:id="@+id/linearLayout_toolbar"
         android:layout_width="match_parent"
@@ -140,6 +152,8 @@
             android:background="#ffffff"
             android:divider="@android:color/transparent"
             android:dividerHeight="6.0sp" />
+
+
 
 
     </LinearLayout>

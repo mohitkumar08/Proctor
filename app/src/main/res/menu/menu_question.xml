@@ -7,12 +7,11 @@
     tools:context="com.proctor.App.Activity.QuestionActivity">
 
 
-    <!--
+<!--
 
-    <item android:id="@+id/menu_new_form"
-        android:icon="@drawable/finish"
-        android:title="who am i"
-        app:showAsAction="ifRoom|withText">
-    </item>
+    <item android:id="@+id/menu_item_finish"
+          android:title="text"
+          android:icon="@drawable/finish"
+          app:showAsAction="always|withText" />
 -->
 </menu>

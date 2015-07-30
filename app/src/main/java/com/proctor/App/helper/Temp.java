@@ -12,7 +12,7 @@ import com.proctor.App.model.Question;
  */
 public class Temp {
 
-
+/*
     public void setType()
     {
         Log.e("start save audit type","start save audit type");
@@ -119,5 +119,5 @@ public class Temp {
 
     }
 
-
+*/
 }

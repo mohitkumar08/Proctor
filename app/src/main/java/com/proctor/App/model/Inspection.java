@@ -1,7 +1,7 @@
 package com.proctor.App.model;
 
 import com.orm.SugarRecord;
-
+import com.google.gson.annotations.SerializedName;
 /**
  * Created by MOHIT KUMAR on 7/14/2015.
  */

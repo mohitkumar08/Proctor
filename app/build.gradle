@@ -38,4 +38,6 @@ dependencies {
     compile 'co.dift.ui.swipetoaction:library:1.1'
     compile 'com.android.support:support-v4:22.2.1'
     compile 'com.helpshift:android-aar:3.9.1'
+    compile 'com.nineoldandroids:library:2.4.0'
+    compile 'com.google.android.gms:play-services:7.5.0'
 }

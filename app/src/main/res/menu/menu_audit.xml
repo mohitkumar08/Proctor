@@ -4,6 +4,11 @@
     tools:context="com.proctor.App.Activity.AuditActivity"
     xmlns:yourapp="http://schemas.android.com/apk/res-auto" >
 
+    <item android:id="@+id/finish_audit" android:title="Finish"
+          android:icon="@drawable/logout"
+          android:orderInCategory="100"
+          app:showAsAction="ifRoom"
+          android:actionProviderClass="android.widget.ShareActionProvider"/>
 
 
 </menu>

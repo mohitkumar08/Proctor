@@ -74,10 +74,9 @@ public class SplashActivity extends ActionBarActivity {
         try {
             prefs = context.getSharedPreferences(LOGGED_USER, MODE_PRIVATE);
             String userName, passWord;
-            userName = prefs.getString("userName", null);
-            passWord = prefs.getString("passWord", null);
-            Log.e("user name", userName);
-            Log.e("password", passWord);
+            userName = prefs.getString("id", null);
+            passWord = prefs.getString("name", null);
+
             if (userName != null && passWord != null) {
                 returnValue = true;
 

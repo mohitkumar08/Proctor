@@ -73,9 +73,9 @@ public class Initialize  {
                 dbHelper.onCreate(sqlite_DB);
 				dbHelper.close();
                 Temp tmp = new Temp();
-                tmp.setLocation();
-                tmp.setQuestion();
-                tmp.setType();
+             //   tmp.setLocation();
+               // tmp.setQuestion();
+                //tmp.setType();
 
                 /*
                 ArrayList<Location> location = (ArrayList<Location>) Select.from(Location.class).where(Condition.prop("audit").eq("shop")).list();

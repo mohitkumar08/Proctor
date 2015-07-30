@@ -123,6 +123,17 @@ public class AuditFinish extends ActionBarActivity implements View.OnClickListen
         layoutParams.leftMargin =20;
         layoutParams.rightMargin =20;
         toolbar.setTitle("Category ");
+		toolbar.setNavigationIcon(R.drawable.ic_chevron_left_white_48dp);
+		toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick( View v ) {
+				Intent intent1 =new Intent(context, QuestionActivity.class);
+				intent1.putExtra("username",intent.getStringExtra("username"));
+				intent1.putExtra("type_name",intent.getStringExtra("type_name"));
+				intent1.putExtra("location_name",intent.getStringExtra("location_name"));
+				context.startActivity(intent1);
+			}
+		});
         layout = (LinearLayout) findViewById(R.id.finish_linearLayout_toolbar);
 //        toolbar_list.setOnItemClickListener(this);
         //setToolbarList();
@@ -217,6 +228,7 @@ Log.e("size of map list",String.valueOf(mapList.size()));
             CategoryListAdapter adapter = new CategoryListAdapter(getApplicationContext(), 0, mapList);
             adapter.notifyDataSetChanged();
             list.setAdapter(adapter);
+
             LayoutParams params = listViewLayout.getLayoutParams();
             params.height = 55 * mapList.size();
             uploadQuestion = new QuestionUploadCondition();
@@ -233,11 +245,15 @@ Log.e("size of map list",String.valueOf(mapList.size()));
 
     public void buttonSubmit() {
         Dashboard dashboard = uploadQuestion.getDashboard(userDashboardId);
-        if (dashboard.getStatus() != 0) {
+		submit_data.setText("Completed");
+		submit_data.setEnabled(false);
+
+        /*if (dashboard.getStatus() != 0) {
             Toast.makeText(context, "You Have Completed Audit", Toast.LENGTH_LONG).show();
         } else {
             Toast.makeText(context, "You are Not Completed Audit Your Audit Resume", Toast.LENGTH_LONG).show();
         }
+        */
     }
 
 
@@ -287,10 +303,13 @@ Log.e("size of map list",String.valueOf(mapList.size()));
     public boolean onKeyDown(int keyCode, KeyEvent event) {
         if (keyCode == KeyEvent.KEYCODE_BACK) {
             finish();
-            Intent i = new Intent(this, AuditSummary.class);
-            i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+			Intent intent1 =new Intent(context, QuestionActivity.class);
+			intent1.putExtra("username",intent.getStringExtra("username"));
+			intent1.putExtra("type_name",intent.getStringExtra("type_name"));
+			intent1.putExtra("location_name",intent.getStringExtra("location_name"));
+			intent1.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             //i.putExtra("EmpId",eeid);
-            this.startActivity(i);
+			this.startActivity(intent1);
             return true;
 
         }

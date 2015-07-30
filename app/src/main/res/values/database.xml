@@ -26,7 +26,10 @@
         	QUESTIONTEXT TEXT,
         	PHOTO TEXT,
         	SCORE INT,
-        	QUESTIONSEQUENCE INT
+        	QUESTIONSEQUENCE INT,
+            AUDITTYPEID INT,
+            CATEGORYID INT
+
 
         	)
 
@@ -39,11 +42,12 @@
             AUDIT TEXT,
             SCORE INT,
             BY TEXT,
-            DATE TEXT
-            <!--AUDITID INT,
-            FOREIGN KEY(AUDITID) REFERENCES Audit(ID)
-            -->
-           )
+            DATE TEXT,
+            LOCID INT
+        <!--AUDITID INT,
+        FOREIGN KEY(AUDITID) REFERENCES Audit(ID)
+        -->
+        )
     </string>
 <string name="create_audit">
          CREATE TABLE IF NOT EXISTS Audit (
@@ -77,7 +81,17 @@
         TYPE TEXT,
         STATUS INT,
         LOCATIONAME TEXT,
-        TOTALSCORE INT
+        TOTALSCORE INT,
+        LATITUDE INT,
+        LONGITUDE INT,
+        IMEI INT,
+        LOCATIONID INT,
+        USERID INT ,
+        AUDITTYPEID INT
+
+
+
+
         )
 </string>
 

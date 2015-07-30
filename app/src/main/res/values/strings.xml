@@ -25,5 +25,8 @@
     <string name="title_activity_camera">CameraActivity</string>
     <string name="title_activity_help_shift_integration">HelpShiftIntegration</string>
     <string name="title_activity_lol">Lol</string>
+    <string name="title_top">Cancel</string>
+    <string name="title_activity_jugaad">Jugaad</string>
+    <string name="title_activity_geo_location">GeoLocation</string>
 
 </resources>

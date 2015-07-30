@@ -3,31 +3,70 @@
     android:id="@+id/relativeLayout1"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-
-    android:layout_height="40dp"
-    android:background="#fffcec">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="100dp"
+    android:background="#ffffff">
 
     <TextView
         android:id="@+id/list_text"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp"
         android:layout_marginRight="60dp"
         android:gravity="fill_horizontal|center_horizontal"
         android:text="Large Text"
         android:textColor="#000000"
         android:textSize="16sp"
+        android:scaleType="center"
         />
 
     <ImageView
         android:id="@+id/captureImage"
         android:layout_width="60dp"
+        android:background="#ffffff"
         android:layout_height="40dp"
         android:src="@drawable/camera_front"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/list_text"
+        android:layout_alignRight="@+id/list_text"
         android:visibility="gone"
+        android:scaleType="center"
+        android:layout_alignEnd="@+id/list_text"/>
+
+
+
+    <EditText
+        android:inputType="textMultiLine"
+        android:lines="4"
+        android:minLines="4"
+        android:maxLines="4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/comment_box"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/list_text"
+        android:hint="Comment"
+        android:scaleType="center"
+        android:visibility="gone"        />
+
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:id="@+id/showComment"
+
+        android:src="@drawable/ic_list_black_48dp"
+        android:layout_alignTop="@+id/list_text"
+        android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"/>
-<!---->
+
+
+    <!--
+
+
+    -->
 
 
 </RelativeLayout>

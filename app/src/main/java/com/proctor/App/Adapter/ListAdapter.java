@@ -53,7 +53,9 @@ public class ListAdapter extends ArrayAdapter<Inspection> {
 
             holder.name = (TextView) convertView.findViewById(R.id.list_text);
             holder.imageview = (ImageView) convertView.findViewById(R.id.captureImage);
+
             convertView.setTag(holder);
+
         } else {
 
             holder = (ViewHolder) convertView.getTag();
@@ -76,7 +78,7 @@ public class ListAdapter extends ArrayAdapter<Inspection> {
 
 		}
         holder.name.setText(loc.getQuestionname());
-
+		holder.name.setTag(position);
         return convertView;
     }
 
